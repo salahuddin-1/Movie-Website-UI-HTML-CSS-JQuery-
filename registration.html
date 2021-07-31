@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <title>Register in flakes</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="library/jquery.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <form action="index.html" onsubmit="return validate()">
+        <div class="content">
+            <div class="background-image-container">
+                <div class="background-image">
+                    <div class="background-image-blur-container"></div>
+                </div>
+            </div>
+
+            <div class="login-container">
+                <div class="login-container-blur"></div>
+                <div class="login-container-contents">
+                    <div class="login-text">
+                        <h1>Log-In</h1>
+                    </div>
+                    <div class="username-container">
+                        <input type="text" class="input" placeholder="  Enter email" id="email">
+                        <div class="error-text" id="email-error"></div>
+                    </div>
+
+
+                    <div class="password-container">
+                        <input type="password" class="input" placeholder="  Password" id="password">
+                        <div class="error-text" id="password-error"></div>
+
+                    </div>
+
+                    <div class="button-container">
+                        <button class="button">Login</button>
+                    </div>
+
+                    <div class="remember-me-help-container">
+                        <div class="remember-me-container">
+                            <input type="checkbox" class="checkbox">
+                            <span class="remember-me-text">Remember me</span>
+                        </div>
+
+                        <span class="need-help-text">Need help?</span>
+
+                    </div>
+
+                    <div class="register-container">
+                        <span class="new-to-flakes-container">New to Flakes?</span>
+                        <span class="register">Register now</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="validation.js"></script>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo-container .logo:hover {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 30px;
+    color: #4dbf00;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list .menu-list-item:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-list-item {
+    margin-right: 30px;
+}
+
+.menu-list-item.active {
+    font-weight: bold;
+}
+
+.login-register-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-picture {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-register-text-container {
+    margin: 0 20px;
+}
+
+.login-register-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.navigation-login {
+    color: white;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon {
+    color: goldenrod;
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar .left-menu-icon:hover {
+    cursor: pointer;
+    font-size: 22px;
+    color: #4dbf00;
+}
+
+.left-menu-icon {
+    color: white;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container {
+    margin-left: 50px;
+}
+
+.featured-content {
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title {
+    width: 200px;
+}
+
+.featured-desc {
+    width: 500px;
+    color: lightgray;
+    margin: 30px 0;
+}
+
+.featured-button {
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.featured-button:hover {
+    cursor: pointer;
+    background-color: green;
+}
+
+.movie-list-container {
+    padding: 0 20px;
+}
+
+.movie-list-wrapper {
+    overflow: hidden;
+}
+
+.movie-list-title:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-without-arrow {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.movie-list-item {
+    margin-right: 30px;
+    position: relative;
+}
+
+.movie-list-item-img {
+    border-radius: 10px;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    opacity: 0.5;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.movie-list-item-button:hover {
+    background-color: green;
+    transition: none;
+}
+
+.movie-list-item-title {
+    position: absolute;
+    background-color: #333;
+    font-size: 28px;
+    top: 10%;
+    left: 50px;
+    font-weight: bold;
+    padding: 3px 10px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-desc {
+    position: absolute;
+    background-color: #333;
+    font-size: 14px;
+    top: 31%;
+    left: 50px;
+    padding: 10px;
+    width: 230px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item-button {
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    color: white;
+    background-color: #4dbf00;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    cursor: pointer;
+}
